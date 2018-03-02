@@ -7,7 +7,7 @@ import {
   SimpleLayoutComponent
 } from './containers';
 
-export const routes: Routes = [
+export const ROUTES: Routes = [
   {
     path: '',
     redirectTo: 'dashboard',
@@ -17,19 +17,19 @@ export const routes: Routes = [
     path: '',
     component: FullLayoutComponent,
     data: {
-      title: 'Home'
+      title: 'Principal'
     },
     children: [
       {
         path: 'dashboard',
-        loadChildren: './views/dashboard/dashboard.module#DashboardModule'
+        loadChildren: './modules/dashboard/dashboard.module#DashboardModule'
       }
     ]
   }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(ROUTES) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule {}

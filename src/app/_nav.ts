@@ -4,8 +4,7 @@ export const navigation = [
     url: '/dashboard',
     icon: 'icon-speedometer',
     badge: {
-      variant: 'info',
-      text: 'NEW'
+      variant: 'info'
     }
   }
 ];
