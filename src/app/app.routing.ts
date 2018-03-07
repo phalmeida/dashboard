@@ -10,7 +10,7 @@ import {
 export const ROUTES: Routes = [
     {
         path: '',
-        redirectTo: 'dashboard',
+        redirectTo: 'login',
         pathMatch: 'full',
     },
     {
